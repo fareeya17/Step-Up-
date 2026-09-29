@@ -1,0 +1,12 @@
+{
+  "name": "StepUp",
+"short_name": "StepUp",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ecfdf5",
+"theme_color": "#16a34a",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StepUp</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="top">
+      <div>
+        <p class="app-name">✅ StepUp</p>
+        <h1><span id="greeting">Good Morning</span>,! <span id="greetIcon">☀️</span></h1>
+        <p>Stay focused, stay productive!</p>
+      </div>
+      <span class="date" id="date"></span>
+      <button id="themeBtn" class="theme-btn">🌙</button>
+    </header>
+
+    <div class="progress-card">
+      <div class="progress-text" id="progressText"></div>
+      <div class="bar"><div class="fill" id="progressFill"></div></div>
+    </div>
+      <input id="taskInput" type="text" placeholder="Add a new task...">
+<input id="dueDate" type="date">
+<input id="dueTime" type="time">
+<select id="priority">...</select>
+<button id="addBtn">Add Task</button>
+        <option value="none">None</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </>
+      <button id="addBtn">Add Task</button>
+    </>
+
+    <div class="chips">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="today">Today</button>
+      <button class="chip" data-filter="important">Important</button>
+      <button class="chip" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="hero">
+      <div class="hero-icon">📝</div>
+      <p class="hero-note">You got this! 💙</p>
+    </div>
+
+    <p class="quote">
+      Small steps make big progress 🌿
+    </p>
+
+    <nav class="bottom-nav">
+      <button class="nav active" data-filter="all"><span>🏠</span>Home</button>
+      <button class="nav" data-filter="today"><span>📅</span>Today</button>
+      <button class="nav" data-filter="important"><span>⭐</span>Important</button>
+      <button class="nav" data-filter="completed"><span>✅</span>Completed</button>
+    </nav>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
